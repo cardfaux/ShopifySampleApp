@@ -1,6 +1,5 @@
 /* eslint-disable require-atomic-updates */
 /* eslint-disable promise/catch-or-return */
-/* eslint-disable babel/object-curly-spacing */
 /* eslint-disable @shopify/binary-assignment-parens */
 require('isomorphic-fetch');
 const Koa = require('koa');
