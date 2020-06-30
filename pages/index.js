@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { EmptyState, Layout, Page } from '@shopify/polaris';
+import { ResourcePicker } from '@shopify/app-bridge-react';
 
-const index = () => {
+const Index = () => {
+  const [modal, setModal] = useState({ open: false });
+
   return (
     <Page>
+      <ResourcePicker
+        resourceType="Product"
+        showVariants={false}
+        open={modal.open}
+        onCancel={() => setModal({ open: false })}
+      />
       <Layout>
         <EmptyState
           heading="Manage your inventory transfers"
-          action={{ content: 'Select New Products' }}
+          action={{
+            content: 'Select Products',
+            onAction: () => setModal({ open: true })
+          }}
           secondaryAction={{
             content: 'Learn more',
             url: 'https://help.shopify.com'
@@ -21,4 +33,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
