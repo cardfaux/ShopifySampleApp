@@ -33,6 +33,9 @@
     "no-trailing-spaces": 0,
     "babel/object-curly-spacing": 0,
     "space-in-parens": 1,
+    "promise/catch-or-return": 0,
+    "require-atomic-updates": 0,
+    "@shopify/binary-assignment-parens": 0,
     "@shopify/jsx-no-hardcoded-content": 0
   }
 }

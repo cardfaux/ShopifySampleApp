@@ -1,6 +1,3 @@
-/* eslint-disable require-atomic-updates */
-/* eslint-disable promise/catch-or-return */
-/* eslint-disable @shopify/binary-assignment-parens */
 require('isomorphic-fetch');
 const Koa = require('koa');
 const next = require('next');
@@ -11,7 +8,7 @@ const session = require('koa-session');
 
 dotenv.config();
 
-const port = parseInt(process.env.PORT, 10) || 3000;
+const PORT = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -48,7 +45,8 @@ app.prepare().then(() => {
     ctx.res.statusCode = 200;
   });
 
-  server.listen(port, () => {
-    console.log(`> Ready on http://localhost:${port}`);
+  server.listen(PORT, () => {
+    // console.log(`%c > Ready on http://localhost:${port}`, 'color: blue; font-weight: bold;');
+    console.log('\x1b[36m%s\x1b[0m', `App API Is Running On Port ${PORT}`);
   });
 });

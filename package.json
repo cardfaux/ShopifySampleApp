@@ -4,7 +4,7 @@
   "description": "applications for shopify using graphql and nextjs",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "nodemon server.js --exec",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },

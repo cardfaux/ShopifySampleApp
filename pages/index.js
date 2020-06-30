@@ -7,7 +7,7 @@ const index = () => {
       <Layout>
         <EmptyState
           heading="Manage your inventory transfers"
-          action={{ content: 'Select Products' }}
+          action={{ content: 'Select New Products' }}
           secondaryAction={{
             content: 'Learn more',
             url: 'https://help.shopify.com'
