@@ -46,7 +46,6 @@ app.prepare().then(() => {
   });
 
   server.listen(PORT, () => {
-    // console.log(`%c > Ready on http://localhost:${port}`, 'color: blue; font-weight: bold;');
-    console.log('\x1b[36m%s\x1b[0m', `App API Is Running On Port ${PORT}`);
+    console.log('\x1b[36m%s\x1b[0m', `App API Is Running At http://localhost:${PORT}`);
   });
 });
