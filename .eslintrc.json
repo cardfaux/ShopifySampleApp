@@ -37,6 +37,8 @@
     "require-atomic-updates": 0,
     "react/jsx-fragments": 0,
     "import/no-extraneous-dependencies": 0,
+    "import/order": 0,
+    "@shopify/jsx-no-complex-expressions": 0,
     "@shopify/binary-assignment-parens": 0,
     "@shopify/jsx-no-hardcoded-content": 0
   }
